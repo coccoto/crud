@@ -27,23 +27,25 @@ $connInfo = [
 ];
 ```
 
+- index.php
+
 ```php
 require_once 'vendor/autoload.php';
 
 $crud = new coccoto\dbmanager\CRUD();
 ```
 
-List of database operation methods.
+## Example
 
-- ### [SELECT.md]()
+- ### [SELECT.md](https://github.com/coccoto/dbmanager/blob/master/docs/Select.md)
 
-- ### [INSERT.md]()
+- ### [INSERT.md](https://github.com/coccoto/dbmanager/blob/master/docs/Insert.md)
 
-- ### [UPDATE.md]()
+- ### [UPDATE.md](https://github.com/coccoto/dbmanager/blob/master/docs/Update.md)
 
-- ### [DELETE.md]()
+- ### [DELETE.md](https://github.com/coccoto/dbmanager/blob/master/docs/Delete.md)
 
-- ### [QUERY.md]()
+- ### [QUERY.md](https://github.com/coccoto/dbmanager/blob/master/docs/Query.md)
 
 ## License
 MIT License
