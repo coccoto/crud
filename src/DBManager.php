@@ -47,7 +47,7 @@ abstract class DBManager {
         return $option;
     }
 
-    public static function setConnInfo(array $connInfo): void {
+    public static function push(array $connInfo): void {
 
         self::$connInfo = $connInfo;
     }

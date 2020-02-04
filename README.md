@@ -28,7 +28,7 @@ $connInfo = [
     'pass' => '',
 ];
 
-coccoto\anemane\Anemane::setConnInfo($connInfo);
+coccoto\anemane\Anemane::push($connInfo);
 ```
 
 ## Example
