@@ -1,6 +1,6 @@
 <?php
 
-namespace coccoto\anemane\internal;
+namespace coccoto\crud\internal;
 
 final class Delete extends Component {
 

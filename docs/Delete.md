@@ -10,8 +10,8 @@ $data = [
     ],
 ];
 
-$anemane = new coccoto\anemane\Anemane();
-$anemane->delete('products', $data);
+$crud = new coccoto\crud\CRUD();
+$crud->delete('products', $data);
 ```
 
 ### Instructions executed by this operation

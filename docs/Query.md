@@ -7,8 +7,8 @@
 ```php
 $sql = "UPDATE list SET subject='math', score=80 WHERE class=5 AND name='michael'"
 
-$anemane = new coccoto\anemane\Anemane();
-$anemane->run($sql);
+$crud = new coccoto\crud\CRUD();
+$crud->run($sql);
 ```
 
 - 2
@@ -25,9 +25,9 @@ $data = [
     ],
 ];
 
-$anemane = new coccoto\anemane\Anemane();
-$anemane->run($sql, $data);
-$result = $anemane->stmt->fetchAll();
+$crud = new coccoto\crud\CRUD();
+$crud->run($sql, $data);
+$result = $crud->stmt->fetchAll();
 ```
 
 ### Instructions executed by this operation

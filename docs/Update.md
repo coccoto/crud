@@ -14,8 +14,8 @@ $data = [
     ],
 ];
 
-$anemane = new coccoto\anemane\Anemane();
-$anemane->update('list', $data);
+$crud = new coccoto\crud\CRUD();
+$crud->update('list', $data);
 ```
 
 ### Instructions executed by this operation

@@ -1,4 +1,4 @@
-# anemane
+# crud
 
 A little support for database operations.
 
@@ -9,7 +9,7 @@ A little support for database operations.
 ## Installation
 
 ```sh
-$ composer require coccoto/anemane
+$ composer require coccoto/crud
 ```
 
 ## Usage
@@ -28,20 +28,20 @@ $connInfo = [
     'pass' => '',
 ];
 
-coccoto\anemane\Anemane::push($connInfo);
+coccoto\crud\CRUD::push($connInfo);
 ```
 
 ## Example
 
-- ### [SELECT.md](https://github.com/coccoto/anemane/blob/master/docs/Select.md)
+- ### [SELECT.md](https://github.com/coccoto/crud/blob/master/docs/Select.md)
 
-- ### [INSERT.md](https://github.com/coccoto/anemane/blob/master/docs/Insert.md)
+- ### [INSERT.md](https://github.com/coccoto/crud/blob/master/docs/Insert.md)
 
-- ### [UPDATE.md](https://github.com/coccoto/anemane/blob/master/docs/Update.md)
+- ### [UPDATE.md](https://github.com/coccoto/crud/blob/master/docs/Update.md)
 
-- ### [DELETE.md](https://github.com/coccoto/anemane/blob/master/docs/Delete.md)
+- ### [DELETE.md](https://github.com/coccoto/crud/blob/master/docs/Delete.md)
 
-- ### [QUERY.md](https://github.com/coccoto/anemane/blob/master/docs/Query.md)
+- ### [QUERY.md](https://github.com/coccoto/crud/blob/master/docs/Query.md)
 
 ## License
 MIT License

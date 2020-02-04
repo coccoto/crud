@@ -12,9 +12,9 @@ $data = [
     ],
 ];
 
-$anemane = new coccoto\anemane\Anemane();
-$anemane->select('list', $data);
-$result = $anemane->stmt->fetchAll();
+$crud = new coccoto\crud\CRUD();
+$crud->select('list', $data);
+$result = $crud->stmt->fetchAll();
 ```
 
 ### Instructions executed by this operation
@@ -36,9 +36,9 @@ $data = [
     ],
 ];
 
-$anemane = new coccoto\anemane\Anemane();
-$anemane->select('list', $data);
-$result = $anemane->stmt->fetchAll();
+$crud = new coccoto\crud\CRUD();
+$crud->select('list', $data);
+$result = $crud->stmt->fetchAll();
 ```
 
 ### Instructions executed by this operation

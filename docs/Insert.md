@@ -10,8 +10,8 @@ $data = [
     ],
 ];
 
-$anemane = new coccoto\anemane\Anemane();
-$anemane->insert('user', $data);
+$crud = new coccoto\crud\CRUD();
+$crud->insert('user', $data);
 ```
 
 ### Instructions executed by this operation
