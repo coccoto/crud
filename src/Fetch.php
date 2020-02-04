@@ -1,6 +1,6 @@
 <?php
 
-namespace coccoto\anemane;
+namespace coccoto\crud;
 
 abstract class Fetch extends DBManager {
 

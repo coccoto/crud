@@ -1,5 +1,5 @@
 {
-    "name": "coccoto/anemane",
+    "name": "coccoto/crud",
     "license": "MIT",
     "authors": [
         {
@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "coccoto\\anemane\\": "src/"
+            "coccoto\\crud\\": "src/"
         }
     }
 }
