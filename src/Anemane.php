@@ -1,10 +1,10 @@
 <?php
 
-namespace coccoto\dbmanager;
+namespace coccoto\anemane;
 
-use coccoto\dbmanager\internal as internal;
+use coccoto\anemane\internal as internal;
 
-final class CRUD extends Fetch {
+final class Anemane extends Fetch {
 
     private ? object $select = null;
     private ? object $insert = null;

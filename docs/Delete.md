@@ -10,7 +10,7 @@ $data = [
     ],
 ];
 
-$crud->delete('products', $data);
+$anemane->delete('products', $data);
 ```
 
 ### Instructions executed by this operation

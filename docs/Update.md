@@ -14,7 +14,7 @@ $data = [
     ],
 ];
 
-$crud->update('list', $data);
+$anemane->update('list', $data);
 ```
 
 ### Instructions executed by this operation

@@ -1,5 +1,5 @@
 {
-    "name": "coccoto/dbmanager",
+    "name": "coccoto/anemane",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "coccoto\\dbmanager\\": "src/"
+            "coccoto\\anemane\\": "src/"
         }
     }
 }

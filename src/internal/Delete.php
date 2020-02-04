@@ -1,6 +1,6 @@
 <?php
 
-namespace coccoto\dbmanager\internal;
+namespace coccoto\anemane\internal;
 
 final class Delete extends Component {
 

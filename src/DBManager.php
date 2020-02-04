@@ -1,6 +1,6 @@
 <?php
 
-namespace coccoto\dbmanager;
+namespace coccoto\anemane;
 
 use coccoto\filereader as filereader;
 
@@ -14,7 +14,7 @@ abstract class DBManager {
 
         $this->fileReader = new filereader\FileReader();
 
-        $this->push();
+        $this->setConnInfo();
         $this->connect($this->connInfo(), $this->option());
     }
 
@@ -29,10 +29,10 @@ abstract class DBManager {
         }
     }
 
-    private function push(): void {
+    private function setConnInfo(): void {
 
-        $files = $this->fileReader->search(__DIR__ . '/../conf/*');
-        $this->connInfo = $files['connInfo'];
+        $conf = $this->fileReader->search(__DIR__ . '/../conf/*');
+        $this->connInfo = $conf['connInfo'];
     }
 
     private function connInfo(): array {

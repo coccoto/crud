@@ -7,7 +7,7 @@
 ```php
 $sql = "UPDATE list SET subject='math', score=80 WHERE class=5 AND name='michael'"
 
-$crud->run($sql);
+$anemane->run($sql);
 ```
 
 - 2
@@ -24,8 +24,8 @@ $data = [
     ],
 ];
 
-$crud->run($sql, $data);
-$result = $crud->stmt->fetchAll();
+$anemane->run($sql, $data);
+$result = $anemane->stmt->fetchAll();
 ```
 
 ### Instructions executed by this operation
