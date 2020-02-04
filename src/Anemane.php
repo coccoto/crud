@@ -31,20 +31,20 @@ final class Anemane extends Fetch {
 
     public function insert(string $table, array $data): bool {
 
-        return $this->push($table, $data, __FUNCTION__);
+        return $this->write($table, $data, __FUNCTION__);
     }
 
     public function update(string $table, array $data): bool {
 
-        return $this->push($table, $data, __FUNCTION__);
+        return $this->write($table, $data, __FUNCTION__);
     }
 
     public function delete(string $table, array $data): bool {
 
-        return $this->push($table, $data, __FUNCTION__);
+        return $this->write($table, $data, __FUNCTION__);
     }
 
-    private function push(string $table, array $data, string $function): bool {
+    private function write(string $table, array $data, string $function): bool {
 
         $sql = $this->$function->create($table, $data);
         return $this->run($sql, $data);

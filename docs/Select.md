@@ -12,6 +12,7 @@ $data = [
     ],
 ];
 
+$anemane = new coccoto\anemane\Anemane();
 $anemane->select('list', $data);
 $result = $anemane->stmt->fetchAll();
 ```
@@ -35,6 +36,7 @@ $data = [
     ],
 ];
 
+$anemane = new coccoto\anemane\Anemane();
 $anemane->select('list', $data);
 $result = $anemane->stmt->fetchAll();
 ```

@@ -10,6 +10,7 @@ $data = [
     ],
 ];
 
+$anemane = new coccoto\anemane\Anemane();
 $anemane->delete('products', $data);
 ```
 

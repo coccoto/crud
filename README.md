@@ -16,23 +16,19 @@ $ composer require coccoto/anemane
 
 Connect to the database.
 
-- src/conf/connInfo.php
+- index.php
 
 ```php
+require_once 'vendor/autoload.php';
+
 $connInfo = [
     'host' => '',
     'dbname' => '',
     'user' => '',
     'pass' => '',
 ];
-```
 
-- index.php
-
-```php
-require_once 'vendor/autoload.php';
-
-$anemane = new coccoto\anemane\Anemane();
+coccoto\anemane\Anemane::setConnInfo($connInfo);
 ```
 
 ## Example
