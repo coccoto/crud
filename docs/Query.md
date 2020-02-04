@@ -7,6 +7,7 @@
 ```php
 $sql = "UPDATE list SET subject='math', score=80 WHERE class=5 AND name='michael'"
 
+$anemane = new coccoto\anemane\Anemane();
 $anemane->run($sql);
 ```
 
@@ -24,6 +25,7 @@ $data = [
     ],
 ];
 
+$anemane = new coccoto\anemane\Anemane();
 $anemane->run($sql, $data);
 $result = $anemane->stmt->fetchAll();
 ```

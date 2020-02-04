@@ -2,19 +2,13 @@
 
 namespace coccoto\anemane;
 
-use coccoto\filereader as filereader;
-
 abstract class DBManager {
 
-    private ? object $fileReader = null;
     protected ? object $pdo = null;
-    private ? array $connInfo = null;
+    private static ? array $connInfo = null;
 
     public function __construct() {
 
-        $this->fileReader = new filereader\FileReader();
-
-        $this->setConnInfo();
         $this->connect($this->connInfo(), $this->option());
     }
 
@@ -29,21 +23,15 @@ abstract class DBManager {
         }
     }
 
-    private function setConnInfo(): void {
-
-        $conf = $this->fileReader->search(__DIR__ . '/../conf/*');
-        $this->connInfo = $conf['connInfo'];
-    }
-
     private function connInfo(): array {
 
-        $host = $this->connInfo['host'];
-        $dbname = $this->connInfo['dbname'];
+        $host = self::$connInfo['host'];
+        $dbname = self::$connInfo['dbname'];
 
         $connInfo = [
             'dsn' => 'mysql:host=' . $host . ';dbname=' . $dbname,
-            'user' => $this->connInfo['user'],
-            'pass' => $this->connInfo['pass'],
+            'user' => self::$connInfo['user'],
+            'pass' => self::$connInfo['pass'],
         ];
 
         return $connInfo;
@@ -57,5 +45,10 @@ abstract class DBManager {
         ];
 
         return $option;
+    }
+
+    public static function setConnInfo(array $connInfo): void {
+
+        self::$connInfo = $connInfo;
     }
 }

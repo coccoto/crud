@@ -14,6 +14,7 @@ $data = [
     ],
 ];
 
+$anemane = new coccoto\anemane\Anemane();
 $anemane->update('list', $data);
 ```
 
