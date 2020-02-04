@@ -1,4 +1,4 @@
-# dbmanager
+# anemane
 
 A little support for database operations.
 
@@ -9,7 +9,7 @@ A little support for database operations.
 ## Installation
 
 ```sh
-$ composer require coccoto/dbmanager
+$ composer require coccoto/anemane
 ```
 
 ## Usage
@@ -32,20 +32,20 @@ $connInfo = [
 ```php
 require_once 'vendor/autoload.php';
 
-$crud = new coccoto\dbmanager\CRUD();
+$anemane = new coccoto\anemane\Anemane();
 ```
 
 ## Example
 
-- ### [SELECT.md](https://github.com/coccoto/dbmanager/blob/master/docs/Select.md)
+- ### [SELECT.md](https://github.com/coccoto/anemane/blob/master/docs/Select.md)
 
-- ### [INSERT.md](https://github.com/coccoto/dbmanager/blob/master/docs/Insert.md)
+- ### [INSERT.md](https://github.com/coccoto/anemane/blob/master/docs/Insert.md)
 
-- ### [UPDATE.md](https://github.com/coccoto/dbmanager/blob/master/docs/Update.md)
+- ### [UPDATE.md](https://github.com/coccoto/anemane/blob/master/docs/Update.md)
 
-- ### [DELETE.md](https://github.com/coccoto/dbmanager/blob/master/docs/Delete.md)
+- ### [DELETE.md](https://github.com/coccoto/anemane/blob/master/docs/Delete.md)
 
-- ### [QUERY.md](https://github.com/coccoto/dbmanager/blob/master/docs/Query.md)
+- ### [QUERY.md](https://github.com/coccoto/anemane/blob/master/docs/Query.md)
 
 ## License
 MIT License

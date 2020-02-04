@@ -10,7 +10,7 @@ $data = [
     ],
 ];
 
-$crud->insert('user', $data);
+$anemane->insert('user', $data);
 ```
 
 ### Instructions executed by this operation

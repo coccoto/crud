@@ -12,8 +12,8 @@ $data = [
     ],
 ];
 
-$crud->select('list', $data);
-$result = $crud->stmt->fetchAll();
+$anemane->select('list', $data);
+$result = $anemane->stmt->fetchAll();
 ```
 
 ### Instructions executed by this operation
@@ -35,8 +35,8 @@ $data = [
     ],
 ];
 
-$crud->select('list', $data);
-$result = $crud->stmt->fetchAll();
+$anemane->select('list', $data);
+$result = $anemane->stmt->fetchAll();
 ```
 
 ### Instructions executed by this operation

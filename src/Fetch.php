@@ -1,6 +1,6 @@
 <?php
 
-namespace coccoto\dbmanager;
+namespace coccoto\anemane;
 
 abstract class Fetch extends DBManager {
 
