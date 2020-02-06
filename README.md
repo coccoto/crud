@@ -44,4 +44,5 @@ coccoto\crud\CRUD::push($connInfo);
 - ### [QUERY.md](https://github.com/coccoto/crud/blob/master/docs/Query.md)
 
 ## License
+
 MIT License
